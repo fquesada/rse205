@@ -15,7 +15,8 @@ $this->breadcrumbs=array(
     <?php echo CHtml::form('','post', array('class' => 'bootstrap-frm')); ?>
     
     <h1>Reporte por Cooperativa
-        <span>Seleccione las siguiente opciones para generar el reporte.</span>
+        <span>Materias y SubMaterias</span>
+        <span>Seleccione las siguientes opciones para generar el reporte.</span>
     </h1>
     
     <label>

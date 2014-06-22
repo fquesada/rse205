@@ -561,3 +561,157 @@ REQUEST_URI=/autodiagnostico205/sars/index.php/reportes/basico
 in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (78)
 in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (36)
 in C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php (22)
+2014/06/22 06:51:24 [error] [php] Undefined index: eje (C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php:135)
+Stack trace:
+#0 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\actions\CInlineAction.php(49): ReportesController->actionBasico()
+#1 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(286): ReportesController->runAction()
+#3 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(265): ReportesController->runActionWithFilters()
+#4 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(282): ReportesController->run()
+#5 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\autodiagnostico205\sars\index.php(13): CWebApplication->run()
+REQUEST_URI=/autodiagnostico205/sars/index.php/reportes/basico
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (135)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (46)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php (22)
+2014/06/22 06:51:35 [error] [php] Undefined index: eje (C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php:135)
+Stack trace:
+#0 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\actions\CInlineAction.php(49): ReportesController->actionBasico()
+#1 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(286): ReportesController->runAction()
+#3 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(265): ReportesController->runActionWithFilters()
+#4 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(282): ReportesController->run()
+#5 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\autodiagnostico205\sars\index.php(13): CWebApplication->run()
+REQUEST_URI=/autodiagnostico205/sars/index.php/reportes/basico
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (135)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (46)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php (22)
+2014/06/22 06:51:51 [error] [php] Undefined index: eje (C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php:135)
+Stack trace:
+#0 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\actions\CInlineAction.php(49): ReportesController->actionBasico()
+#1 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(286): ReportesController->runAction()
+#3 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(265): ReportesController->runActionWithFilters()
+#4 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(282): ReportesController->run()
+#5 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\autodiagnostico205\sars\index.php(13): CWebApplication->run()
+REQUEST_URI=/autodiagnostico205/sars/index.php/reportes/basico
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (135)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (46)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php (22)
+2014/06/22 06:58:42 [error] [php] Undefined index: eje (C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php:135)
+Stack trace:
+#0 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\actions\CInlineAction.php(49): ReportesController->actionBasico()
+#1 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(286): ReportesController->runAction()
+#3 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(265): ReportesController->runActionWithFilters()
+#4 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(282): ReportesController->run()
+#5 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\autodiagnostico205\sars\index.php(13): CWebApplication->run()
+REQUEST_URI=/autodiagnostico205/sars/index.php/reportes/basico
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (135)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (46)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php (27)
+2014/06/22 07:01:25 [error] [php] Undefined index: eje (C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php:135)
+Stack trace:
+#0 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\actions\CInlineAction.php(49): ReportesController->actionBasico()
+#1 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(286): ReportesController->runAction()
+#3 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(265): ReportesController->runActionWithFilters()
+#4 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(282): ReportesController->run()
+#5 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\autodiagnostico205\sars\index.php(13): CWebApplication->run()
+REQUEST_URI=/autodiagnostico205/sars/index.php/reportes/basico
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (135)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (46)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php (27)
+2014/06/22 07:30:18 [error] [php] Undefined index: eje (C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php:137)
+Stack trace:
+#0 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\actions\CInlineAction.php(49): ReportesController->actionBasico()
+#1 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(286): ReportesController->runAction()
+#3 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(265): ReportesController->runActionWithFilters()
+#4 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(282): ReportesController->run()
+#5 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\autodiagnostico205\sars\index.php(13): CWebApplication->run()
+REQUEST_URI=/autodiagnostico205/sars/index.php/reportes/basico
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (137)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (46)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php (27)
+2014/06/22 07:31:26 [error] [php] Undefined index: eje (C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php:137)
+Stack trace:
+#0 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\actions\CInlineAction.php(49): ReportesController->actionBasico()
+#1 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(286): ReportesController->runAction()
+#3 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(265): ReportesController->runActionWithFilters()
+#4 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(282): ReportesController->run()
+#5 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\autodiagnostico205\sars\index.php(13): CWebApplication->run()
+REQUEST_URI=/autodiagnostico205/sars/index.php/reportes/basico
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (137)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (46)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php (27)
+2014/06/22 09:14:59 [error] [php] Undefined variable: html (C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php:101)
+Stack trace:
+#0 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\actions\CInlineAction.php(49): ReportesController->actionBasico()
+#1 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(286): ReportesController->runAction()
+#3 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(265): ReportesController->runActionWithFilters()
+#4 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(282): ReportesController->run()
+#5 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\autodiagnostico205\sars\index.php(13): CWebApplication->run()
+REQUEST_URI=/autodiagnostico205/sars/index.php/reportes/basico
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (101)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (44)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php (27)
+2014/06/22 09:20:43 [error] [php] Undefined variable: html (C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php:172)
+Stack trace:
+#0 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\actions\CInlineAction.php(49): ReportesController->actionBasico()
+#1 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(286): ReportesController->runAction()
+#3 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(265): ReportesController->runActionWithFilters()
+#4 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(282): ReportesController->run()
+#5 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\autodiagnostico205\sars\index.php(13): CWebApplication->run()
+REQUEST_URI=/autodiagnostico205/sars/index.php/reportes/basico
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (172)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (39)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php (27)
+2014/06/22 10:03:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/preload.gif".' in C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(141): CWebApplication->runController('images/preload....')
+#1 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\autodiagnostico205\sars\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/autodiagnostico205/sars/index.php/images/preload.gif
+HTTP_REFERER=http://localhost/autodiagnostico205/sars/index.php/reportes/basico
+---
+2014/06/22 10:03:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/preload.gif".' in C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(141): CWebApplication->runController('images/preload....')
+#1 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\autodiagnostico205\sars\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/autodiagnostico205/sars/index.php/images/preload.gif
+---
+2014/06/22 10:07:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(141): CWebApplication->runController('reportes/images...')
+#3 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\autodiagnostico205\sars\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/autodiagnostico205/sars/index.php/reportes/images/preload.GIF
+HTTP_REFERER=http://localhost/autodiagnostico205/sars/index.php/reportes/basico
+---

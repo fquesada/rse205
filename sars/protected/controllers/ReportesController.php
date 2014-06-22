@@ -17,8 +17,13 @@ class ReportesController extends Controller
                     Yii::app()->end();
                 } 
                 else{
+                    $indsubmateria = false;
+                    if(isset($_POST['indsubmateria'])){
+                        $indsubmateria = $_POST['indsubmateria'] === 'true'? true: false;
+                    }
+                    
                     $reporte = new Reportes();
-                    $reporte->reportebasico(intval($_POST['cooperativa']), $_POST['ano'], $_POST['indsubmateria']);
+                    $reporte->reportebasico(intval($_POST['cooperativa']), $_POST['ano'], $indsubmateria);
                     $formatoreporte = $reporte->generarreportebasico();
                     
                     $respuesta = array('resultado' => true,'mensaje' => $formatoreporte);                    
