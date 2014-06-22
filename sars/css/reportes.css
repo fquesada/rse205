@@ -1,0 +1,93 @@
+/* 
+    Document   : reportes
+    Created on : 21-jun-2014, 22:37:48
+    Author     : Fabian
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+.reportebasico{
+    width: 800px;
+    margin: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 30px 50px 30px;
+    border: 1px solid #DDD;
+    background: #FFF;    
+    font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #888;
+    text-shadow: 1px 1px 1px #FFF;
+    border:1px solid #DDD;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+
+.h1_cooperativa {
+    font: 25px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0px 0px 10px 40px;
+    display: block;   
+    margin: -30px -30px 15px -30px;
+    color: #888;
+}
+
+.h2_cooperativa {
+    font: 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0px 0px 10px 40px;
+    display: block;
+    border-bottom: 1px solid #DADADA;
+    margin: -10px -30px 30px -30px;
+    color: #1D9627;
+}
+
+.p_periodo{
+    color: #333;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.tbl_materia{
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;    
+    border-collapse: collapse;
+}
+
+.tbl_materia > thead > tr > th{
+  text-align: center;
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: black;
+  border: 1px solid black;
+  background: #DDD
+}
+
+.tbl_materia > tbody > tr > td{
+  text-align: center;
+  font-size: 16px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  
+  border: 1px solid black;
+  color: rgb(0, 9, 75);
+}
+
+.p_detallepuntaje{
+    margin-left: auto;
+    margin-right: auto;
+    width: 220px;
+    font-size: 10px;
+}
+
+.p_noevaluacion{
+    color: #333;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 40px 0px 40px 0;
+}

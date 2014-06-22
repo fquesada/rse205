@@ -14,7 +14,13 @@
 
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
-
+        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/reportes.css" />
+        
+        <?php
+            Yii::app()->clientScript->registerCoreScript('jquery');
+            Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/reportes.js');
+        ?>
+        
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
