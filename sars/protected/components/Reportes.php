@@ -164,8 +164,7 @@ class Reportes {
         //$html .= "</div>";
         
         return $html;
-    }
-    
+    }    
     
     function crearParrafoNoEvaluacion($ano){
         //$html = "<div class='div_periodo'>";
@@ -177,7 +176,7 @@ class Reportes {
     
     function crearEncabezadoReporte(){
         $cooperativa = Cooperativa::model()->findByPk($this->_idcooperativa);
-        $html = "<h1 class='h1_cooperativa'>Reporte de RS Cooperativo</h1>";
+        $html = "<h1 class='h1_cooperativa'>Reporte de Autodiagnostico de Responsabilidad Social</h1>";
         $html .= "<h2 class='h2_cooperativa'>Cooperativa: ".$cooperativa->cooperativa."</h2>";
         return $html;
     }
