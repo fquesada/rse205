@@ -32,9 +32,10 @@ $(document).ready(function() {
             },
             success: function(respuesta){
                if(!respuesta.resultado){
+                   $('#reporte').html('');
                    window.alert(respuesta.mensaje); 
                }else{            
-                   $('#reporte').html();
+                   $('#reporte').html('');
                    $("#reporte").html(respuesta.mensaje);
                }
                
