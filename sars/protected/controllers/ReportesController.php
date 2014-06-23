@@ -2,6 +2,34 @@
 
 class ReportesController extends Controller
 {
+        public function filters()
+        {
+            return array(
+                'accessControl',
+            );
+        }
+    
+        public function accessRules()
+	{       
+		return array(
+			array('deny',
+                            'actions'=>array('index','basico','crucedatos'),
+                            'users'=>array('?'),
+                        ),
+			array('allow', // allow authenticated user to perform 'create' and 'update' actions
+				'actions'=>array('index','basico','crucedatos'),
+				'users'=>array('@'),
+			),
+			array('allow', // allow admin user to perform 'admin' and 'delete' actions
+				'actions'=>array(),
+				'users'=>array('admin'),
+			),
+			array('deny',  // deny all users
+				'users'=>array('*'),
+			),
+		);
+	}
+        
 	public function actionIndex()
 	{
 		$this->render('index');

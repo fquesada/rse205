@@ -7,7 +7,7 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'Sistema Analitico de Responsabilidad Social',
+	'name'=>'Sistema Analitico de Responsabilidad Social (SARS)',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -21,12 +21,12 @@ return array(
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
 		
-		'gii'=>array(
-			'class'=>'system.gii.GiiModule',
-			'password'=>'lime205',
-			// If removed, Gii defaults to localhost only. Edit carefully to taste.
-			'ipFilters'=>array('127.0.0.1','::1'),
-		),
+//		'gii'=>array(
+//			'class'=>'system.gii.GiiModule',
+//			'password'=>'lime205',
+//			// If removed, Gii defaults to localhost only. Edit carefully to taste.
+//			'ipFilters'=>array('127.0.0.1','::1'),
+//		),
 		
 	),
 
@@ -80,11 +80,13 @@ return array(
 			),
 		),
 	),
+    
+        'homeUrl'=>array('site/login'),
 
 	// application-level parameters that can be accessed
 	// using Yii::app()->params['paramName']
 	'params'=>array(
 		// this is used in contact page
-		'adminEmail'=>'webmaster@example.com',
+		'adminEmail'=>'admin@rse-tec.com',             
 	),
 );
