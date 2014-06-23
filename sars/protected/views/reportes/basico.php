@@ -1,3 +1,19 @@
+<script language="javascript">
+function printdiv(printpage)
+{
+var headstr = "<html><head><title></title></head><body>";
+var footstr = "</body>";
+var newstr = document.getElementById(printpage).innerHTML;
+var oldstr = document.body.innerHTML;
+document.body.innerHTML = headstr+newstr+footstr;
+window.print();
+document.body.innerHTML = oldstr;
+return false;
+}
+</script>
+
+
+
 <?php
 /* @var $this ReportesController */
 /* @var $modelo_ano Ano */
@@ -11,6 +27,8 @@ $this->breadcrumbs=array(
 ?>
 
 <div id="selecciondatos" class="selecciondatos">
+    
+    <?php echo CHtml::link('Volver al menu de Reportes',array('reportes/index')); ?>
     
     <?php echo CHtml::form('','post', array('class' => 'bootstrap-frm')); ?>
     
@@ -39,6 +57,9 @@ $this->breadcrumbs=array(
 
     <?php echo CHtml::endForm(); ?>
 </div>
+
+<!--
+<input name="b_print" type="button" class="ipt"   onClick="printdiv('reporte');" value=" Print ">-->
 
 <div id="reporte" class="reportebasico">
     

@@ -1,15 +1,10 @@
 /* 
     Document   : reportes
     Created on : 21-jun-2014, 22:37:48
-    Author     : Fabian
+    Author     : Fabian Quesada Sanchez
     Description:
-        Purpose of the stylesheet follows.
+        Styles de los reportes basico y cruces de informacion
 */
-
-root { 
-    display: block;
-}
-
 
 /*Styles Reporte Basico*/
 
@@ -32,7 +27,7 @@ root {
 }
 
 /*Styles Encabezado*/
-.h1_cooperativa {
+.reportebasico .h1_cooperativa {
     font: 25px "Helvetica Neue", Helvetica, Arial, sans-serif;
     padding: 0px 0px 10px 40px;
     display: block;   
@@ -40,18 +35,27 @@ root {
     color: #888;
 }
 
-.h2_cooperativa {
+.reportebasico .h2_cooperativa {
     font: 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
     padding: 0px 0px 10px 40px;
     display: block;
-    border-bottom: 1px solid #DADADA;
+    /*border-bottom: 1px solid #DADADA;*/
     margin: -10px -30px 30px -30px;
     color: #1D9627;
 }
 
+.reportebasico .h3_cooperativa {
+    font: 10px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0px 0px 10px 40px;
+    display: block;
+    border-bottom: 1px solid #DADADA;
+    margin: -10px -30px 30px -30px;
+    color: #888;
+}
+
 /*Styles Materia*/
 
-.div_periodo{
+.reportebasico .div_periodo{
     background: #FFF;  
     border:1px solid #DDD;
     border-radius: 5px;
@@ -62,21 +66,21 @@ root {
     margin-top: 10px;
 }
 
-.p_periodo{
+.reportebasico .p_periodo{
     color: #333;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: bold;
     font-size: 18px;
 }
 
-.tbl_materia{
+.reportebasico .tbl_materia{
     width: auto;
     margin-left: auto;
     margin-right: auto;    
     border-collapse: collapse;
 }
 
-.tbl_materia > thead > tr > th{
+.reportebasico .tbl_materia > thead > tr > th{
   text-align: center;
   font-size: 14px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -86,7 +90,7 @@ root {
   background: #DDD
 }
 
-.tbl_materia > tbody > tr > td{
+.reportebasico .tbl_materia > tbody > tr > td{
   text-align: center;
   font-size: 16px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  
@@ -94,14 +98,14 @@ root {
   color: rgb(0, 9, 75);
 }
 
-.p_detallepuntaje{
+.reportebasico .p_detallepuntaje{
     margin-left: auto;
     margin-right: auto;
-    width: 220px;
+    width: 275px;
     font-size: 10px;
 }
 
-.p_noevaluacion{
+.reportebasico .p_noevaluacion{
     color: #333;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: bold;
@@ -110,21 +114,21 @@ root {
 }
 
 /*Styles SubMateria*/
-.p_materia{
+.reportebasico .p_materia{
     color: #333;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: bold;
     font-size: 14px;
 }
 
-.tbl_submateria{
+.reportebasico .tbl_submateria{
     width: auto;
     margin-left: auto;
     margin-right: auto;    
     border-collapse: collapse;
 }
 
-.tbl_submateria > thead > tr > th{
+.reportebasico .tbl_submateria > thead > tr > th{
   text-align: center;
   font-size: 14px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -134,13 +138,156 @@ root {
   background: #F3AFAF;
 }
 
-.tbl_submateria > tbody > tr > td{
+.reportebasico .tbl_submateria > tbody > tr > td{
   text-align: center;
   font-size: 16px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  
   border: 1px solid black;
   color: rgb(0, 9, 75);
 }
+
+/*Styles Reporte Cruces de Informacion*/
+
+/*Styles DIV Reporte*/
+.reportecrucedatos{
+    width: 800px;
+    margin: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 30px 50px 30px;
+    border: 1px solid #DDD;
+    background: #FFF;    
+    font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #888;
+    text-shadow: 1px 1px 1px #FFF;
+    border:1px solid #DDD;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+/*Styles Encabezado*/
+.reportecrucedatos .h1_cooperativa {
+    font: 25px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0px 0px 10px 40px;
+    display: block;   
+    margin: -30px -30px 15px -30px;
+    color: #888;
+}
+
+.reportecrucedatos .h2_cooperativa {
+    font: 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0px 0px 10px 40px;
+    display: block;
+    /*border-bottom: 1px solid #DADADA;*/
+    margin: -10px -30px 30px -30px;
+    color: #1D9627;
+}
+
+.reportecrucedatos .h3_cooperativa {
+    font: 10px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0px 0px 10px 40px;
+    display: block;
+    border-bottom: 1px solid #DADADA;
+    margin: -10px -30px 30px -30px;
+    color: #888;
+}
+
+/*Styles Materia*/
+
+.reportecrucedatos .div_periodo{
+    background: #FFF;  
+    border:1px solid #DDD;
+    border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+    padding: 30px 30px 30px 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.reportecrucedatos .p_periodo{
+    color: #333;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.reportecrucedatos .tbl_comparativamateria{
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;    
+    border-collapse: collapse;
+}
+
+.reportecrucedatos .tbl_comparativamateria > thead > tr > th{
+  text-align: center;
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: black;
+  border: 1px solid black;
+  background: #DDD
+}
+
+.reportecrucedatos .tbl_comparativamateria > tbody > tr > td{
+  text-align: center;
+  font-size: 16px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  
+  border: 1px solid black;
+  color: rgb(0, 9, 75);
+}
+
+.reportecrucedatos .p_detallepuntaje{
+    margin-left: auto;
+    margin-right: auto;
+    width: 275px;
+    font-size: 10px;
+}
+
+.reportecrucedatos .p_noevaluacion{
+    color: #333;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 40px 0px 40px 0;
+}
+
+/*Styles SubMateria*/
+.reportecrucedatos .p_materia{
+    color: #333;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.reportecrucedatos .tbl_comparativasubmateria{
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;    
+    border-collapse: collapse;
+}
+
+.reportecrucedatos .tbl_comparativasubmateria > thead > tr > th{
+  text-align: center;
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: black;
+  border: 1px solid black;
+  background: #F3AFAF;
+}
+
+.reportecrucedatos .tbl_comparativasubmateria > tbody > tr > td{
+  text-align: center;
+  font-size: 16px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  
+  border: 1px solid black;
+  color: rgb(0, 9, 75);
+}
+
+
+/*Styles Carga Ajax*/
 
 .preload{
     margin: 0px auto 0px auto;

@@ -715,3 +715,197 @@ Stack trace:
 REQUEST_URI=/autodiagnostico205/sars/index.php/reportes/images/preload.GIF
 HTTP_REFERER=http://localhost/autodiagnostico205/sars/index.php/reportes/basico
 ---
+2014/06/22 10:53:55 [error] [php] Undefined variable: modelo_cooperativas (C:\xampp\htdocs\autodiagnostico205\sars\protected\views\reportes\crucedatos.php:23)
+Stack trace:
+#0 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(869): ReportesController->renderFile()
+#1 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(782): ReportesController->renderPartial()
+#2 C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php(46): ReportesController->render()
+#3 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\actions\CInlineAction.php(49): ReportesController->actionCruceDatos()
+#4 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(286): ReportesController->runAction()
+#6 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(265): ReportesController->runActionWithFilters()
+#7 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(282): ReportesController->run()
+#8 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\autodiagnostico205\sars\index.php(13): CWebApplication->run()
+REQUEST_URI=/autodiagnostico205/sars/index.php/reportes/crucedatos
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\views\reportes\crucedatos.php (23)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php (46)
+in C:\xampp\htdocs\autodiagnostico205\sars\index.php (13)
+2014/06/22 10:54:33 [error] [php] Undefined variable: modelo_cooperativas (C:\xampp\htdocs\autodiagnostico205\sars\protected\views\reportes\crucedatos.php:23)
+Stack trace:
+#0 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(869): ReportesController->renderFile()
+#1 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(782): ReportesController->renderPartial()
+#2 C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php(53): ReportesController->render()
+#3 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\actions\CInlineAction.php(49): ReportesController->actionCruceDatos()
+#4 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(286): ReportesController->runAction()
+#6 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(265): ReportesController->runActionWithFilters()
+#7 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(282): ReportesController->run()
+#8 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\autodiagnostico205\sars\index.php(13): CWebApplication->run()
+REQUEST_URI=/autodiagnostico205/sars/index.php/reportes/crucedatos
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\views\reportes\crucedatos.php (23)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php (53)
+in C:\xampp\htdocs\autodiagnostico205\sars\index.php (13)
+2014/06/22 15:37:07 [error] [php] Array to string conversion (C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php:144)
+Stack trace:
+#0 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\actions\CInlineAction.php(49): ReportesController->actionCruceDatos()
+#1 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(286): ReportesController->runAction()
+#3 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(265): ReportesController->runActionWithFilters()
+#4 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(282): ReportesController->run()
+#5 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\autodiagnostico205\sars\index.php(13): CWebApplication->run()
+REQUEST_URI=/autodiagnostico205/sars/index.php/reportes/crucedatos
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (144)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (78)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php (71)
+2014/06/22 15:39:15 [error] [php] Array to string conversion (C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php:144)
+Stack trace:
+#0 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\actions\CInlineAction.php(49): ReportesController->actionCruceDatos()
+#1 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(286): ReportesController->runAction()
+#3 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(265): ReportesController->runActionWithFilters()
+#4 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(282): ReportesController->run()
+#5 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\autodiagnostico205\sars\index.php(13): CWebApplication->run()
+REQUEST_URI=/autodiagnostico205/sars/index.php/reportes/crucedatos
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (144)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (78)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php (71)
+2014/06/22 15:40:43 [error] [php] Array to string conversion (C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php:144)
+Stack trace:
+#0 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\actions\CInlineAction.php(49): ReportesController->actionCruceDatos()
+#1 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(286): ReportesController->runAction()
+#3 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(265): ReportesController->runActionWithFilters()
+#4 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(282): ReportesController->run()
+#5 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\autodiagnostico205\sars\index.php(13): CWebApplication->run()
+REQUEST_URI=/autodiagnostico205/sars/index.php/reportes/crucedatos
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (144)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (78)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php (71)
+2014/06/22 15:42:59 [error] [php] Array to string conversion (C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php:146)
+Stack trace:
+#0 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\actions\CInlineAction.php(49): ReportesController->actionCruceDatos()
+#1 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(286): ReportesController->runAction()
+#3 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(265): ReportesController->runActionWithFilters()
+#4 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(282): ReportesController->run()
+#5 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\autodiagnostico205\sars\index.php(13): CWebApplication->run()
+REQUEST_URI=/autodiagnostico205/sars/index.php/reportes/crucedatos
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (146)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (78)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php (71)
+2014/06/22 15:45:54 [error] [exception.CException] exception 'CException' with message 'Property "CDbCommand._text" is not defined.' in C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\base\CComponent.php:173
+Stack trace:
+#0 xdebug://debug-eval(1): CComponent->__set('_text', '   SELECT ej.ej...')
+#1 C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php(151): Reportes::obtenerComparativoMateria()
+#2 C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php(78): Reportes->obtenerComparativoMateria('2012')
+#3 C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php(71): Reportes->generarreportecrucedatos()
+#4 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\actions\CInlineAction.php(49): ReportesController->actionCruceDatos()
+#5 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(282): CController->run('crucedatos')
+#9 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(141): CWebApplication->runController('reportes/cruced...')
+#10 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\autodiagnostico205\sars\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/autodiagnostico205/sars/index.php/reportes/crucedatos
+HTTP_REFERER=http://localhost/autodiagnostico205/sars/index.php/reportes/crucedatos
+---
+2014/06/22 16:23:59 [error] [php] Undefined offset: 0 (C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php:215)
+Stack trace:
+#0 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\actions\CInlineAction.php(49): ReportesController->actionCruceDatos()
+#1 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(286): ReportesController->runAction()
+#3 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(265): ReportesController->runActionWithFilters()
+#4 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(282): ReportesController->run()
+#5 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\autodiagnostico205\sars\index.php(13): CWebApplication->run()
+REQUEST_URI=/autodiagnostico205/sars/index.php/reportes/crucedatos
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (215)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (88)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php (71)
+2014/06/22 19:19:06 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT * FROM `subeje` `t` WHERE ideje=:ideje.
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (334)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (88)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php (76)
+2014/06/22 19:21:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT * FROM `subeje` `t` WHERE ideje=:ideje' in C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php(334): CActiveRecord->findAll(Object(CDbCriteria), Array)
+#4 C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php(88): Reportes->crearTablaComparativaSubMateria(Array)
+#5 C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php(76): Reportes->generarreportecrucedatos()
+#6 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\actions\CInlineAction.php(49): ReportesController->actionCruceDatos()
+#7 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(282): CController->run('crucedatos')
+#11 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(141): CWebApplication->runController('reportes/cruced...')
+#12 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\autodiagnostico205\sars\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/autodiagnostico205/sars/index.php/reportes/crucedatos
+HTTP_REFERER=http://localhost/autodiagnostico205/sars/index.php/reportes/crucedatos
+---
+2014/06/22 19:21:36 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT * FROM `subeje` `t` WHERE ideje=:ideje.
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (335)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (88)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php (76)
+2014/06/22 19:22:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT * FROM `subeje` `t` WHERE ideje=:ideje' in C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php(335): CActiveRecord->findAll(Object(CDbCriteria), Array)
+#4 C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php(88): Reportes->crearTablaComparativaSubMateria(Array)
+#5 C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php(76): Reportes->generarreportecrucedatos()
+#6 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\actions\CInlineAction.php(49): ReportesController->actionCruceDatos()
+#7 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(282): CController->run('crucedatos')
+#11 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(141): CWebApplication->runController('reportes/cruced...')
+#12 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\autodiagnostico205\sars\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/autodiagnostico205/sars/index.php/reportes/crucedatos
+HTTP_REFERER=http://localhost/autodiagnostico205/sars/index.php/reportes/crucedatos
+---
+2014/06/22 19:22:33 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT * FROM `subeje` `t` WHERE ideje=:ideje.
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (335)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (88)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php (76)
+2014/06/22 19:30:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT * FROM `subeje` `t` WHERE ideje=:ideje' in C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php(335): CActiveRecord->findAll(Object(CDbCriteria), Array)
+#4 C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php(88): Reportes->crearTablaComparativaSubMateria(Array)
+#5 C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php(76): Reportes->generarreportecrucedatos()
+#6 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\actions\CInlineAction.php(49): ReportesController->actionCruceDatos()
+#7 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(282): CController->run('crucedatos')
+#11 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(141): CWebApplication->runController('reportes/cruced...')
+#12 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\autodiagnostico205\sars\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/autodiagnostico205/sars/index.php/reportes/crucedatos
+HTTP_REFERER=http://localhost/autodiagnostico205/sars/index.php/reportes/crucedatos
+---

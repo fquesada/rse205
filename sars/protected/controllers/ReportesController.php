@@ -43,33 +43,52 @@ class ReportesController extends Controller
         
         public function actionCruceDatos()
 	{
-		$this->render('crucedatos');
-	}
+            if(Yii::app()->request->isAjaxRequest)
+            {
+                if(!isset($_POST['cooperativa'])){
+                    $respuesta = array('resultado' => false,'mensaje' => 'Debe seleccionar al menos Dos Cooperativa.');                    
+                    echo CJSON::encode($respuesta); 
+                    Yii::app()->end();
+                }
+                else if(count($_POST['cooperativa']) < 2){
+                    $respuesta = array('resultado' => false,'mensaje' => 'Debe seleccionar al menos Dos Cooperativa.');                    
+                    echo CJSON::encode($respuesta); 
+                    Yii::app()->end();
+                }
+                else if(!isset($_POST['ano'])){
+                    $respuesta = array('resultado' => false,'mensaje' => 'Debe seleccionar al menos un Año.');                    
+                    echo CJSON::encode($respuesta); 
+                    Yii::app()->end();
+                }
+                else if(!isset($_POST['materia'])){
+                    $respuesta = array('resultado' => false,'mensaje' => 'Debe seleccionar al menos una Materia.');                    
+                    echo CJSON::encode($respuesta); 
+                    Yii::app()->end();
+                }
+                else{
+                    $indsubmateria = false;
+                    if(isset($_POST['indsubmateria'])){
+                        $indsubmateria = $_POST['indsubmateria'] === 'true'? true: false;
+                    }
 
-	// Uncomment the following methods and override them if needed
-	/*
-	public function filters()
-	{
-		// return the filter configuration for this controller, e.g.:
-		return array(
-			'inlineFilterName',
-			array(
-				'class'=>'path.to.FilterClass',
-				'propertyName'=>'propertyValue',
-			),
-		);
-	}
+                    $reporte = new Reportes();
+                    $reporte->reportecrucedatos($_POST['cooperativa'], $_POST['ano'], $_POST['materia'],$indsubmateria);
+                    $formatoreporte = $reporte->generarreportecrucedatos();
 
-	public function actions()
-	{
-		// return external action classes, e.g.:
-		return array(
-			'action1'=>'path.to.ActionClass',
-			'action2'=>array(
-				'class'=>'path.to.AnotherActionClass',
-				'propertyName'=>'propertyValue',
-			),
-		);
+                    $respuesta = array('resultado' => true,'mensaje' => $formatoreporte);                    
+                    echo CJSON::encode($respuesta); 
+                    Yii::app()->end();
+                }
+            }
+            
+            $modelo_ano = Ano::model()->findAll();
+            $modelo_cooperativas = Cooperativa::model()->findAll();  
+            $modelo_materia = Eje::model()->findAll();
+
+            $this->render('crucedatos',array(
+                        'modelo_ano'=>$modelo_ano,'modelo_cooperativas'=>$modelo_cooperativas, 
+                'modelo_materia' => $modelo_materia
+            ));           
+            
 	}
-	*/
 }

@@ -1,6 +1,7 @@
 /* #### bootstrap Form #### */
 .bootstrap-frm {
     width: 450px;
+    margin-top: 15px;
     margin-right: auto;
     margin-left: auto;
     background: #FFF;
@@ -118,4 +119,90 @@
     margin: 5px;
     color: #333;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  
+}
+
+/*Form Cruce de Variables*/
+.frm_crucevariables{    
+    width: 800px;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background: #FFF;
+    padding: 20px 30px 20px 30px;
+    font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #888;
+    text-shadow: 1px 1px 1px #FFF;
+    border:1px solid #DDD;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+.frm_crucevariables h1 {
+    font: 25px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0px 0px 10px 40px;
+    display: block;
+    border-bottom: 1px solid #DADADA;
+    margin: -10px -30px 30px -30px;
+    color: #888;
+}
+
+.frm_crucevariables h1>span {
+    display: block;
+    font-size: 11px;
+}
+
+.frm_crucevariableslabel {
+    display: block;
+    margin: 0px 0px 5px;
+}
+
+.frm_crucevariables label > span {
+    float: left;
+    width: auto;
+    text-align: left;
+    padding-right: 1px;
+    margin-top: 10px;
+    color: #333;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.frm_crucevariables .btn_cruce {
+    background: #FFF;
+    border: 1px solid #CCC;
+    padding: 10px 25px 10px 25px;
+    color: #333;
+    border-radius: 4px; 
+    margin: 20px auto 10px 325px;
+}
+
+.frm_crucevariables .btn_cruce:hover {
+    color: #333;
+    background-color: #EBEBEB;
+    border-color: #ADADAD;
+}
+
+.frm_crucevariables  input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+}
+
+.frm_crucevariables #chbxl_cooperativa{    
+    width: 150px;
+}
+
+.frm_crucevariables  #chbxl_ano {
+    width: 90px;
+}
+
+.frm_crucevariables #chbx_submaterias{
+    float: left;
+    margin: 20px 0px 0px 12px;
+}
+
+.frm_crucevariables #sp_submaterias{
+    margin-left: 63%;
+    margin-top: 20px;
+    width: 110px;
 }
