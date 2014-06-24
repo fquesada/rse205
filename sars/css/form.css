@@ -206,3 +206,93 @@
     margin-top: 20px;
     width: 110px;
 }
+
+/*Style Login*/
+
+.frm_login{    
+    width: 600px;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background: #FFF;
+    padding: 20px 30px 20px 30px;
+    font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #888;
+    text-shadow: 1px 1px 1px #FFF;
+    border:1px solid #DDD;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+.frm_login h1 {
+    font: 25px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0px 0px 10px 40px;
+    display: block;
+    border-bottom: 1px solid #DADADA;
+    margin: -10px -30px 30px -30px;
+    color: #888;
+}
+
+.frm_login p{
+    font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.frm_login h1>span {
+    display: block;
+    font-size: 11px;
+}
+
+.frm_login label > span {
+    float: left;
+    width: auto;
+    text-align: left;
+    padding-right: 1px;
+    margin-top: 7px;
+    color: #333;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.frm_login  input[type="text"], input[type="password"]{
+    float: left;
+    border: 1px solid #CCC;
+    color: #888;
+    height: 15px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+    margin-top: 2px;
+    margin-left: 6px;
+    outline: 0 none;
+    padding: 6px 12px;
+    width: 200px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    font: normal 14px/14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.frm_login .errorMessage{
+    font: normal 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    float: left;
+    width: 300px;
+    color: red;
+}
+
+.frm_login .btn_login {
+    background: #FFF;
+    border: 1px solid #CCC;
+    padding: 10px 25px 10px 25px;
+    color: #333;
+    border-radius: 4px; 
+    margin: 40px auto 10px 40%;
+}
+
+.frm_login .btn_login:hover {
+    color: #333;
+    background-color: #EBEBEB;
+    border-color: #ADADAD;
+}

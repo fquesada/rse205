@@ -933,3 +933,31 @@ Stack trace:
 REQUEST_URI=/autodiagnostico205/sars/index.php/site/login
 HTTP_REFERER=http://localhost/autodiagnostico205/sars/index.php/site/login
 ---
+2014/06/23 20:07:02 [error] [php] include(ReportesController.php): failed to open stream: No such file or directory (C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\SiteController.php(34): spl_autoload_call()
+#1 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#2 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(286): SiteController->runAction()
+#4 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(282): SiteController->run()
+#6 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\autodiagnostico205\sars\index.php(13): CWebApplication->run()
+REQUEST_URI=/autodiagnostico205/sars/index.php
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\SiteController.php (34)
+in C:\xampp\htdocs\autodiagnostico205\sars\index.php (13)
+2014/06/23 20:07:02 [error] [php] include(ReportesController.php): failed to open stream: No such file or directory (C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\SiteController.php(34): spl_autoload_call()
+#1 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#2 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(286): SiteController->runAction()
+#4 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(282): SiteController->run()
+#6 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\autodiagnostico205\sars\index.php(13): CWebApplication->run()
+REQUEST_URI=/autodiagnostico205/sars/index.php
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\SiteController.php (34)
+in C:\xampp\htdocs\autodiagnostico205\sars\index.php (13)

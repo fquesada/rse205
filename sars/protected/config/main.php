@@ -7,7 +7,7 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'Sistema Analitico de Responsabilidad Social (SARS)',
+	'name'=>'Sistema Analítico de Responsabilidad Social Cooperativa (SARSCoop)',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -81,7 +81,8 @@ return array(
 		),
 	),
     
-        'homeUrl'=>array('site/login'),
+        //'homeUrl'=>array('site/login'),
+        'language' => 'es',
 
 	// application-level parameters that can be accessed
 	// using Yii::app()->params['paramName']

@@ -5,46 +5,43 @@
 
 $this->pageTitle=Yii::app()->name . ' - Iniciar Sesion';
 $this->breadcrumbs=array(
-	'Login',
+	'Iniciar sesión',
 );
 ?>
 
-<h1>Iniciar Sesion</h1>
-
-<p>Ingrese sus credenciales para iniciar sesion:</p>
-
-<div class="form">
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'login-form',
 	'enableClientValidation'=>true,
 	'clientOptions'=>array(
 		'validateOnSubmit'=>true,
 	),
+        'htmlOptions'=>array(
+            'class'=>'frm_login',
+        ),
 )); ?>
 
-	<p class="note">Campos con <span class="required">*</span> son requeridos.</p>
+        <h1>Iniciar Sesión</h1>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'username'); ?>
+        <p>Ingrese sus credenciales para iniciar sesión:</p>
+
+	<label>
+		<span>Usuario:</span>
 		<?php echo $form->textField($model,'username'); ?>
-		<?php echo $form->error($model,'username'); ?>
-	</div>
+		<?php // echo $form->error($model,'username'); ?>
+	</label>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'password'); ?>
+	<label>
+                <span>Contraseña:</span>
 		<?php echo $form->passwordField($model,'password'); ?>
-		<?php echo $form->error($model,'password'); ?>
-        </div>
-
-<!--	<div class="row rememberMe">
-		<?php echo $form->checkBox($model,'rememberMe'); ?>
-		<?php echo $form->label($model,'rememberMe'); ?>
-		<?php echo $form->error($model,'rememberMe'); ?>
-	</div>-->
-
-	<div class="row buttons">
-		<?php echo CHtml::submitButton('Iniciar Sesion'); ?>
-	</div>
+		<?php // echo $form->error($model,'password'); ?>
+        </label>
+	
+        <label>
+            <span><?php echo $form->error($model,'username'); ?></span>          
+            <span><?php echo $form->error($model,'password'); ?></span>
+        </label>
+        
+	<?php echo CHtml::submitButton('Iniciar Sesión', array('class'=>'btn_login')); ?>
+	
 
 <?php $this->endWidget(); ?>
-</div><!-- form -->
