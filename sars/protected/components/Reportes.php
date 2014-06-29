@@ -11,9 +11,6 @@
  */
 class Reportes {
     
-    
-    //public $reporte;
-    
     private $_idcooperativa;
     private $_ano = array();
     private $_indsubmateria;
@@ -23,16 +20,14 @@ class Reportes {
     
     private $_tiporeporte; /*0 = Basico, 1 = Cruce Variables*/
     
-    public function reportebasico($idcooperativa, $anos, $indsubmateria)
-    {
+    public function reportebasico($idcooperativa, $anos, $indsubmateria){
         $this->_idcooperativa = $idcooperativa;
         $this->_ano = $anos;
         $this->_indsubmateria = $indsubmateria;
         $this->_tiporeporte = 0;
     }
     
-    public function reportecrucedatos($cooperativas, $anos, $materias, $indsubmateria)
-    {
+    public function reportecrucedatos($cooperativas, $anos, $materias, $indsubmateria){
         $this->_cooperativas = $cooperativas;
         $this->_ano = $anos;        
         $this->_materias = $materias;
@@ -45,29 +40,30 @@ class Reportes {
         $html = array();
         $html[] = $this->crearEncabezadoReporte();
         
+        $anos = array();
         foreach ($this->_ano as $key => $ano) {
-            
-            $modelo_ano = Ano::model()->findByPk($ano);    
-            $querymateria = $this->obtenerMateriaxAno($modelo_ano->ano);
-            if(!$querymateria)
-            {
-                $html[] = $this->crearParrafoNoEvaluacion($modelo_ano->ano);
-            }
-            else
-            {
-                $html[] = $this->crearTablaMateria($querymateria,$modelo_ano->ano);
-                if($this->_indsubmateria){
-                    $querysubmateria = $this->obtenerSubMateriaxAno($modelo_ano->ano);
-                    $html[] = $this->crearTablaSubMateria($querysubmateria);
-                }
+            $modelo_ano = Ano::model()->findByPk($ano);
+            $anos[] = $modelo_ano->ano;
+        }
+        
+        $querymateria = $this->obtenerMateriaxAnos($anos);
+        if(!$querymateria)
+        {
+            $html[] = $this->crearParrafoNoEvaluacion($anos);
+        }
+        else
+        {
+            $html[] = $this->crearTablaMateria($querymateria,$anos);
+            if($this->_indsubmateria){
+                $querysubmateria = $this->obtenerSubMateriaxAnos($anos);
+                $html[] = $this->crearTablaSubMateria($querysubmateria,$anos);
             }
         }
         
         return $html;
     }
     
-    public function generarreportecrucedatos()
-    {
+    public function generarreportecrucedatos(){
         $html = array();
         $html[] = $this->crearEncabezadoReporte();
         
@@ -92,21 +88,23 @@ class Reportes {
         
         return $html;
     }
-   
+    
     /*
     Retorna False si la consulta retorna 0 Filas
-    Retorna array de Eje y Puntaje      
+    Retorna array de IdEje, Eje, Puntaje, Ano   
     */    
-    function obtenerMateriaxAno($ano){
+    function obtenerMateriaxAnos($anos){
+        
+        $param_anos = implode($anos, ',');        
+        
         $connection = Yii::app()->db;        
-        $sql =  "   SELECT ej.eje, re.puntaje
+        $sql =  "   SELECT ej.ideje, ej.eje, re.puntaje, e.ano
                     FROM  ((resultados_eje re INNER JOIN (SELECT ev.*, c.cooperativa nombrecooperativa 
-                    FROM evaluacion ev INNER JOIN cooperativa c ON ev.cooperativa = c.idcooperativa WHERE ev.cooperativa = :idcooperativa AND ev.ano = :ano) e 
+                    FROM evaluacion ev INNER JOIN cooperativa c ON ev.cooperativa = c.idcooperativa WHERE ev.cooperativa = :idcooperativa AND ev.ano IN (".$param_anos.")) e 
                     ON re.idevaluacion = e.id) INNER JOIN eje ej ON re.eje = ej.ideje)
                 ";
         $command = $connection->createCommand($sql);
         $command->bindParam(":idcooperativa", $this->_idcooperativa, PDO::PARAM_INT);
-        $command->bindParam(":ano", $ano, PDO::PARAM_INT);
         $query = $command->queryAll();
         
         if (empty($query))
@@ -114,20 +112,22 @@ class Reportes {
         else
             return $query;
     }
-    
+       
     /*    
-    Retorna array de Eje y Puntaje      
+    Retorna array de IdSubeje, SubEje, Puntaje, Ano    
     */    
-    function obtenerSubMateriaxAno($ano){
+    function obtenerSubMateriaxAnos($anos){
+        
+        $param_anos = implode($anos, ','); 
+        
         $connection = Yii::app()->db;        
-        $sql =  "   SELECT s.subeje, rs.puntaje 
+        $sql =  "   SELECT s.idsubeje, s.subeje, rs.puntaje, e.ano
                     FROM  (((resultados_subeje rs INNER JOIN (SELECT ev.*, c.cooperativa nombrecooperativa 
-                    FROM evaluacion ev INNER JOIN cooperativa c ON ev.cooperativa = c.idcooperativa WHERE ev.cooperativa = :idcooperativa AND ev.ano = :ano) e 
+                    FROM evaluacion ev INNER JOIN cooperativa c ON ev.cooperativa = c.idcooperativa WHERE ev.cooperativa = :idcooperativa AND ev.ano IN (".$param_anos.")) e 
                     ON rs.idevaluacion = e.id) INNER JOIN eje ej ON rs.eje = ej.ideje) INNER JOIN subeje s ON rs.subeje = s.idsubeje)
                 ";
         $command = $connection->createCommand($sql);
         $command->bindParam(":idcooperativa", $this->_idcooperativa, PDO::PARAM_INT);
-        $command->bindParam(":ano", $ano, PDO::PARAM_INT);
         $query = $command->queryAll();
         
         return $query;
@@ -182,84 +182,106 @@ class Reportes {
             return $query;
     }
     
-    function crearTablaMateria($query, $ano){
+    function crearTablaMateria($query, $anos){
        
-       //$html = "<div class='div_periodo'>";
-       $html = "<p class='p_periodo'>Periodo de Evaluacion: ".$ano."</p>";
-       $html .= "<table class='tbl_materia'>";
+       $html = "<table class='tbl_materia'>";
             $html .= "<thead>";
                 $html .= "<tr>";
                     $html .= "<th>Materia</th>";
-                    $html .= "<th>Puntaje(%)*</th>";
+                    foreach ($anos as $key => $ano) {  
+                        $html .= "<th>".$ano."</th>";
+                    }
                 $html .= "</tr>"; 
             $html .= "</thead>";
             $html .= "<tbody>";
-            foreach ($query as $fila) {
-                $html .= "<tr>";
-                    $html .= "<td>".$fila['eje']."</td>";
-                    $html .= "<td>".$fila['puntaje']."</td>";
-                $html .= "</tr>";
-            }
+            
+            $ejes = Eje::model()->findAll();
+            
+            foreach ($ejes as $key => $eje) {
+                        $html .= "<tr>";                                       
+                            $html .= "<td>".$eje["eje"]."</td>";
+                                
+                            
+                            foreach ($anos as $key => $ano) {  
+                            
+                                $indicadorsinpuntaje = true;
+                                foreach ($query as $fila) {
+                                    if($eje["ideje"] == $fila['ideje'] && $ano == $fila['ano'])
+                                    {
+                                         $html .= "<td>".$fila['puntaje']."</td>";
+                                         $indicadorsinpuntaje = false;
+                                    }
+                                }
+                                if($indicadorsinpuntaje)
+                                {
+                                    $html .= "<td>N/A</td>";
+                                }
+                            }
+                                                               
+                        $html .= "</tr>";
+            } 
             $html .= "</tbody>";
         $html .= "</table>";
         $html .= "<p class='p_detallepuntaje'>* Cada puntaje hace referencia a una escala del 100%</p>";
-        
-        //Cerrar el div del periodo con solo Materia, sino, se procede a cerrar en CrearTablaSubMateria
-//        if(!$this->_indsubmateria){
-//            $html .= "</div>";
-//        }
-        
+       
         return $html;
-    }
+    }        
     
-    function crearTablaSubMateria($query){
-       
-       $ejexsubeje = $this->obtenerEjexSubEje();
-       
-       $punteroejeinicio = 0;
-       $punteroejefinal = 0;
-       $cantsubmateriasactual = 0;
+    function crearTablaSubMateria($query, $anos){
+        
+       $ejes = Eje::model()->findAll();
        
        $html = "";
        
-       foreach ($ejexsubeje as $fila) {
+       foreach ($ejes as $key => $materia) {
                    
-       $html .= "<p class='p_materia'>Materia: ".$fila['eje']."</p>";
+       $html .= "<p class='p_materia'>Materia: ".$materia['eje']."</p>";
        $html .= "<table class='tbl_submateria'>";
             $html .= "<thead>";
                 $html .= "<tr>";
                     $html .= "<th>SubMateria</th>";
-                    $html .= "<th>Puntaje(%)*</th>";
+                    foreach ($anos as $key => $ano) {  
+                        $html .= "<th>".$ano."</th>";
+                    }
                 $html .= "</tr>"; 
             $html .= "</thead>";
             $html .= "<tbody>";
             
-            $cantsubmateriasactual = $cantsubmateriasactual + intval($fila['cant_subeje']);
-            $punteroejefinal = $cantsubmateriasactual - 1;
-            
-            for ($i = $punteroejeinicio; $i <= $punteroejefinal; $i++) {
-                $html .= "<tr>";
-                    $html .= "<td>".$query[$i]['subeje']."</td>";
-                    $html .= "<td>".$query[$i]['puntaje']."</td>";
-                $html .= "</tr>";                
-            }
-            
-            $punteroejeinicio = $punteroejefinal + 1;
-            
-            $html .= "</tbody>";
+            $submaterias = Subeje::model()->findAll(array('condition'=>'ideje=:ideje','params'=>array(':ideje'=>$materia['ideje']),));
+            foreach ($submaterias as $key => $submateria) {
+                        $html .= "<tr>";                                       
+                            $html .= "<td>".$submateria["subeje"]."</td>";
+                            
+                            foreach ($anos as $key => $ano) {  
+                            
+                                $indicadorsinpuntaje = true;
+                                foreach ($query as $fila) {
+                                    if($submateria["idsubeje"] == $fila['idsubeje'] && $ano == $fila['ano'])
+                                    {
+                                         $html .= "<td>".$fila['puntaje']."</td>";
+                                         $indicadorsinpuntaje = false;
+                                    }
+                                }
+                                if($indicadorsinpuntaje)
+                                {
+                                    $html .= "<td>N/A</td>";
+                                }
+                            }
+                                                               
+                        $html .= "</tr>";
+            } 
+           
+        $html .= "</tbody>";
         $html .= "</table>";
         $html .= "<p class='p_detallepuntaje'>* Cada puntaje hace referencia a una escala del 100%</p>";        
         }
         
-        //Cerrar el div del periodo con Materia y SubMaterias,
-        //$html .= "</div>";
-        
-        return $html;
+       return $html;
     }  
     
     function crearTablaComparativaMateria($query, $ano){
        
-       $html = "<p class='p_periodo'>Periodo de Evaluacion: ".$ano."</p>";
+       $html = "<p class='p_periodo'>Período de Evaluación: ".$ano."</p>";
        $html .= "<table class='tbl_comparativamateria'>";
             $html .= "<thead>";
                 $html .= "<tr>";
@@ -306,11 +328,7 @@ class Reportes {
     function crearTablaComparativaSubMateria($query){
        
         $ejexsubeje = $this->obtenerEjexSubEjeFiltrado();
-
-        $punteroejeinicio = 0;
-        $punteroejefinal = 0;
-        $cantsubmateriasactual = 0;
-
+        
         $html = "";
 
         foreach ($ejexsubeje as $fila) {
@@ -363,8 +381,17 @@ class Reportes {
     }
     
     function crearParrafoNoEvaluacion($ano){
-        //$html = "<div class='div_periodo'>";
-        $html = "<p class='p_noevaluacion'>No existen resultados para el año ".$ano.".</p>";
+        
+        //En reporte basico cuando ningun año tiene datos.
+        if(is_array($ano)){
+            $string_anos = "";
+            foreach ($ano as $key => $a) {  
+                $string_anos .= " ".$a."";
+            }
+            $html = "<p class='p_noevaluacion'>No existen resultados para el año ".$string_anos.".</p>";
+        }
+        else//Para reporte de cruce de datos.
+            $html = "<p class='p_noevaluacion'>No existen resultados para el año ".$ano.".</p>";
         //$html .= "</div>";
         
         return $html;
@@ -374,35 +401,23 @@ class Reportes {
         
         if($this->_tiporeporte == 0){
             $cooperativa = Cooperativa::model()->findByPk($this->_idcooperativa);
-            $html = "<h1 class='h1_cooperativa'>Reporte de Autodiagnostico de Responsabilidad Social</h1>";
+            $html = "<h1 class='h1_cooperativa'>Reporte de Autodiagnóstico de Responsabilidad Social</h1>";
             $html .= "<h2 class='h2_cooperativa'>Cooperativa: ".$cooperativa->cooperativa."</h2>";
             
-            setlocale(LC_TIME, 'spanish');           
+            //setlocale(LC_TIME, 'spanish'); //El sábado tiene tilde y por lo tanto el encode del JSON se cae. Pendiente buscar solucion.          
             $html .= "<h3 class='h3_cooperativa'>Generado:".strftime("%A %#d de %B del %Y ")."  a las ".date("h:i:s. A")."</h2>";
             
             return $html;        
         }
         else if($this->_tiporeporte == 1){
-            $html = "<h1 class='h1_cooperativa'>Reporte de Autodiagnostico de Responsabilidad Social</h1>";
-            $html .= "<h2 class='h2_cooperativa'>Reporte de Cruce de Informacion</h2>";
+            $html = "<h1 class='h1_cooperativa'>Reporte de Autodiagnóstico de Responsabilidad Social</h1>";
+            $html .= "<h2 class='h2_cooperativa'>Reporte de Cruce de Información</h2>";
             
-            setlocale(LC_TIME, 'spanish');           
+            //setlocale(LC_TIME, 'spanish');           
             $html .= "<h3 class='h3_cooperativa'>Generado:".strftime("%A %#d de %B del %Y ")."  a las ".date("h:i:s. A")."</h2>";
             
             return $html;  
         }
-    }
-    
-    function obtenerEjexSubEje(){
-        $connection = Yii::app()->db;        
-        $sql =  "   SELECT e.eje, COUNT(s.idsubeje) cant_subeje FROM eje e INNER JOIN subeje s ON  e.ideje = s.ideje
-                    GROUP BY e.eje
-                    ORDER BY e.ideje
-                ";
-        $command = $connection->createCommand($sql);       
-        $query = $command->queryAll();
-        
-        return $query;
     }
     
     function obtenerEjexSubEjeFiltrado(){

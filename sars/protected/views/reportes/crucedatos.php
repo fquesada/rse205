@@ -6,17 +6,17 @@
 
 $this->breadcrumbs=array(
         'Reportes'=>array('reportes/index'),
-	'Reporte de Cruces de Informacion',
+	'Reporte de Cruces de Información',
 );
 ?>
 
 <div id="selecciondatos" class="selecciondatos">
     
-    <?php echo CHtml::link('Volver al menu de Reportes',array('reportes/index')); ?>
+    <?php echo CHtml::link('Volver al menú de Reportes',array('reportes/index')); ?>
     
     <?php echo CHtml::form('','post', array('class' => 'frm_crucevariables')); ?>
     
-    <h1>Reporte de Cruces de Informacion
+    <h1>Reporte de Cruces de Información
         <span>Materias y SubMaterias</span>
         <span>Seleccione las siguientes opciones para generar el reporte.</span>
     </h1>

@@ -28,7 +28,7 @@ $this->breadcrumbs=array(
 
 <div id="selecciondatos" class="selecciondatos">
     
-    <?php echo CHtml::link('Volver al menu de Reportes',array('reportes/index')); ?>
+    <?php echo CHtml::link('Volver al menú de Reportes',array('reportes/index')); ?>
     
     <?php echo CHtml::form('','post', array('class' => 'bootstrap-frm')); ?>
     

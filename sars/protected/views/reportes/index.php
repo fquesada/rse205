@@ -13,6 +13,6 @@ $this->breadcrumbs=array(
 <p>
     <ol>
         <li><?php echo CHtml::link('Reporte por Cooperativa',array('reportes/basico')); ?></li>
-        <li><?php echo CHtml::link('Reporte de Cruce de Informacion',array('reportes/crucedatos')); ?></li> 
+        <li><?php echo CHtml::link('Reporte de Cruce de Información',array('reportes/crucedatos')); ?></li> 
     </ol>
 </p>

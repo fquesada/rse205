@@ -961,3 +961,279 @@ Stack trace:
 REQUEST_URI=/autodiagnostico205/sars/index.php
 in C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\SiteController.php (34)
 in C:\xampp\htdocs\autodiagnostico205\sars\index.php (13)
+2014/06/26 22:13:14 [error] [php] implode(): Invalid arguments passed (C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php:110)
+Stack trace:
+#0 C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php(55): Reportes->generarreportebasico()
+#1 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\actions\CInlineAction.php(49): ReportesController->actionBasico()
+#2 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CFilterChain.php(133): ReportesController->runAction()
+#4 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CInlineFilter.php(58): ReportesController->filterAccessControl()
+#7 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(265): ReportesController->runActionWithFilters()
+#10 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(282): ReportesController->run()
+#11 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\autodiagnostico205\sars\index.php(13): CWebApplication->run()
+REQUEST_URI=/autodiagnostico205/sars/index.php/reportes/basico
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (110)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (54)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php (55)
+2014/06/26 22:13:42 [error] [php] implode(): Invalid arguments passed (C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php:110)
+Stack trace:
+#0 C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php(55): Reportes->generarreportebasico()
+#1 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\actions\CInlineAction.php(49): ReportesController->actionBasico()
+#2 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CFilterChain.php(133): ReportesController->runAction()
+#4 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CInlineFilter.php(58): ReportesController->filterAccessControl()
+#7 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(265): ReportesController->runActionWithFilters()
+#10 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(282): ReportesController->run()
+#11 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\autodiagnostico205\sars\index.php(13): CWebApplication->run()
+REQUEST_URI=/autodiagnostico205/sars/index.php/reportes/basico
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (110)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (54)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php (55)
+2014/06/26 22:16:02 [error] [php] implode(): Invalid arguments passed (C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php:110)
+Stack trace:
+#0 C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php(55): Reportes->generarreportebasico()
+#1 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\actions\CInlineAction.php(49): ReportesController->actionBasico()
+#2 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CFilterChain.php(133): ReportesController->runAction()
+#4 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CInlineFilter.php(58): ReportesController->filterAccessControl()
+#7 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(265): ReportesController->runActionWithFilters()
+#10 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(282): ReportesController->run()
+#11 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\autodiagnostico205\sars\index.php(13): CWebApplication->run()
+REQUEST_URI=/autodiagnostico205/sars/index.php/reportes/basico
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (110)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (54)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php (55)
+2014/06/26 22:17:16 [error] [php] implode(): Invalid arguments passed (C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php:110)
+Stack trace:
+#0 C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php(55): Reportes->generarreportebasico()
+#1 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\actions\CInlineAction.php(49): ReportesController->actionBasico()
+#2 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CFilterChain.php(133): ReportesController->runAction()
+#4 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CInlineFilter.php(58): ReportesController->filterAccessControl()
+#7 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(265): ReportesController->runActionWithFilters()
+#10 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(282): ReportesController->run()
+#11 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\autodiagnostico205\sars\index.php(13): CWebApplication->run()
+REQUEST_URI=/autodiagnostico205/sars/index.php/reportes/basico
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (110)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (54)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php (55)
+2014/06/26 22:19:03 [error] [system.db.CDbCommand] CDbCommand::fetchAll() falló: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IN (2012,2013) e 
+                    ON re.idevaluacion = e.id) INNER JOIN eje' at line 3. La sentencia SQL ejecutada fue:    SELECT ej.eje, re.puntaje
+                    FROM  ((resultados_eje re INNER JOIN (SELECT ev.*, c.cooperativa nombrecooperativa 
+                    FROM evaluacion ev INNER JOIN cooperativa c ON ev.cooperativa = c.idcooperativa WHERE ev.cooperativa = :idcooperativa AND ev.ano = IN (2012,2013) e 
+                    ON re.idevaluacion = e.id) INNER JOIN eje ej ON re.eje = ej.ideje)
+                .
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (121)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (54)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php (55)
+2014/06/26 22:19:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IN (2012,2013) e 
+                    ON re.idevaluacion = e.id) INNER JOIN eje' at line 3. The SQL statement executed was:    SELECT ej.eje, re.puntaje
+                    FROM  ((resultados_eje re INNER JOIN (SELECT ev.*, c.cooperativa nombrecooperativa 
+                    FROM evaluacion ev INNER JOIN cooperativa c ON ev.cooperativa = c.idcooperativa WHERE ev.cooperativa = :idcooperativa AND ev.ano = IN (2012,2013) e 
+                    ON re.idevaluacion = e.id) INNER JOIN eje ej ON re.eje = ej.ideje)
+                ' in C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php(121): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php(54): Reportes->obtenerMateriaxAnos(Array)
+#3 C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php(55): Reportes->generarreportebasico()
+#4 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\actions\CInlineAction.php(49): ReportesController->actionBasico()
+#5 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(282): CController->run('basico')
+#14 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(141): CWebApplication->runController('reportes/basico')
+#15 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\autodiagnostico205\sars\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/autodiagnostico205/sars/index.php/reportes/basico
+HTTP_REFERER=http://localhost/autodiagnostico205/sars/index.php/reportes/basico
+---
+2014/06/26 22:20:39 [error] [system.db.CDbCommand] CDbCommand::fetchAll() falló: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'e 
+                    ON re.idevaluacion = e.id) INNER JOIN eje ej ON re.eje =' at line 3. La sentencia SQL ejecutada fue:    SELECT ej.eje, re.puntaje
+                    FROM  ((resultados_eje re INNER JOIN (SELECT ev.*, c.cooperativa nombrecooperativa 
+                    FROM evaluacion ev INNER JOIN cooperativa c ON ev.cooperativa = c.idcooperativa WHERE ev.cooperativa = :idcooperativa AND ev.ano IN (2012,2013) e 
+                    ON re.idevaluacion = e.id) INNER JOIN eje ej ON re.eje = ej.ideje)
+                .
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (121)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (54)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php (55)
+2014/06/26 22:21:30 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'e 
+                    ON re.idevaluacion = e.id) INNER JOIN eje ej ON re.eje =' at line 3. The SQL statement executed was:    SELECT ej.eje, re.puntaje
+                    FROM  ((resultados_eje re INNER JOIN (SELECT ev.*, c.cooperativa nombrecooperativa 
+                    FROM evaluacion ev INNER JOIN cooperativa c ON ev.cooperativa = c.idcooperativa WHERE ev.cooperativa = :idcooperativa AND ev.ano IN (2012,2013) e 
+                    ON re.idevaluacion = e.id) INNER JOIN eje ej ON re.eje = ej.ideje)
+                ' in C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php(121): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php(54): Reportes->obtenerMateriaxAnos(Array)
+#3 C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php(55): Reportes->generarreportebasico()
+#4 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\actions\CInlineAction.php(49): ReportesController->actionBasico()
+#5 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(282): CController->run('basico')
+#14 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(141): CWebApplication->runController('reportes/basico')
+#15 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\autodiagnostico205\sars\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/autodiagnostico205/sars/index.php/reportes/basico
+HTTP_REFERER=http://localhost/autodiagnostico205/sars/index.php/reportes/basico
+---
+2014/06/28 14:19:43 [error] [php] Undefined variable: ano (C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php:236)
+Stack trace:
+#0 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\actions\CInlineAction.php(49): ReportesController->actionBasico()
+#1 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CFilterChain.php(133): ReportesController->runAction()
+#3 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CInlineFilter.php(58): ReportesController->filterAccessControl()
+#6 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(265): ReportesController->runActionWithFilters()
+#9 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(282): ReportesController->run()
+#10 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\autodiagnostico205\sars\index.php(13): CWebApplication->run()
+REQUEST_URI=/autodiagnostico205/sars/index.php/reportes/basico
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (236)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (61)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php (55)
+2014/06/28 14:23:20 [error] [php] Undefined variable: html (C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php:237)
+Stack trace:
+#0 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\actions\CInlineAction.php(49): ReportesController->actionBasico()
+#1 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CFilterChain.php(133): ReportesController->runAction()
+#3 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CInlineFilter.php(58): ReportesController->filterAccessControl()
+#6 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(265): ReportesController->runActionWithFilters()
+#9 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(282): ReportesController->run()
+#10 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\autodiagnostico205\sars\index.php(13): CWebApplication->run()
+REQUEST_URI=/autodiagnostico205/sars/index.php/reportes/basico
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (237)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (61)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php (55)
+2014/06/28 14:24:03 [error] [php] Undefined variable: html (C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php:237)
+Stack trace:
+#0 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\actions\CInlineAction.php(49): ReportesController->actionBasico()
+#1 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CFilterChain.php(133): ReportesController->runAction()
+#3 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CInlineFilter.php(58): ReportesController->filterAccessControl()
+#6 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(265): ReportesController->runActionWithFilters()
+#9 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(282): ReportesController->run()
+#10 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\autodiagnostico205\sars\index.php(13): CWebApplication->run()
+REQUEST_URI=/autodiagnostico205/sars/index.php/reportes/basico
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (237)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (61)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php (55)
+2014/06/28 14:55:01 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php:253)
+Stack trace:
+#0 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\actions\CInlineAction.php(49): ReportesController->actionBasico()
+#1 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CFilterChain.php(133): ReportesController->runAction()
+#3 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CInlineFilter.php(58): ReportesController->filterAccessControl()
+#6 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(265): ReportesController->runActionWithFilters()
+#9 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(282): ReportesController->run()
+#10 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\autodiagnostico205\sars\index.php(13): CWebApplication->run()
+REQUEST_URI=/autodiagnostico205/sars/index.php/reportes/basico
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (253)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (61)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php (55)
+2014/06/29 06:31:05 [error] [php] Missing argument 2 for Reportes::crearTablaSubMateria(), called in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php on line 64 and defined (C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php:236)
+Stack trace:
+#0 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\actions\CInlineAction.php(49): ReportesController->actionBasico()
+#1 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CFilterChain.php(133): ReportesController->runAction()
+#3 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CInlineFilter.php(58): ReportesController->filterAccessControl()
+#6 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(265): ReportesController->runActionWithFilters()
+#9 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(282): ReportesController->run()
+#10 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\autodiagnostico205\sars\index.php(13): CWebApplication->run()
+REQUEST_URI=/autodiagnostico205/sars/index.php/reportes/basico
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (236)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\components\Reportes.php (64)
+in C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php (55)
+2014/06/29 07:41:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1044] Access denied for user 'rseitcro_reporte'@'localhost' to database 'rseitcro_analitica'' in C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\base\CApplication.php(450): CModule->getComponent('db')
+#4 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\db\ar\CActiveRecord.php(634): CApplication->getDb()
+#5 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\db\ar\CActiveRecord.php(667): CActiveRecord->getDbConnection()
+#6 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\db\ar\CActiveRecord.php(1469): CActiveRecord->getCommandBuilder()
+#7 C:\xampp\htdocs\autodiagnostico205\sars\protected\controllers\ReportesController.php(64): CActiveRecord->findAll()
+#8 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\actions\CInlineAction.php(49): ReportesController->actionBasico()
+#9 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(282): CController->run('basico')
+#18 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\web\CWebApplication.php(141): CWebApplication->runController('reportes/basico')
+#19 C:\xampp\htdocs\autodiagnostico205\limesurvey\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\autodiagnostico205\sars\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/autodiagnostico205/sars/index.php/reportes/basico
+HTTP_REFERER=http://localhost/autodiagnostico205/sars/index.php
+---

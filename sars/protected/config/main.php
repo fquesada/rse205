@@ -7,7 +7,7 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'Sistema Analítico de Responsabilidad Social Cooperativa (SARSCoop)',
+	'name'=>'Sistema para el Análisis de la Responsabilidad Social Cooperativa (SARSCoop)',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -53,10 +53,10 @@ return array(
 		// uncomment the following to use a MySQL database
 		
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=autodiagnostico205',
+			'connectionString' => 'mysql:host=localhost;dbname=rseitcro_analitica',
 			'emulatePrepare' => true,
-			'username' => 'lime205',
-			'password' => 'lime205',
+			'username' => 'rseitcro_reporte',
+			'password' => 'reporteRSTEC0519?',
 			'charset' => 'utf8',
 		),
 		
